@@ -1,5 +1,7 @@
 import "package:flutter/material.dart";
+import 'package:get/get.dart';
 import 'package:splashscreen/splashscreen.dart';
+import 'package:vibey/home.dart';
 
 class Splashvib extends StatefulWidget {
   @override
@@ -11,7 +13,8 @@ class _SplashvibState extends State<Splashvib> {
   Widget build(BuildContext context) {
     return SplashScreen(
       loaderColor: Colors.purple[900],
-      seconds: 10,
+      navigateAfterSeconds: Homepage(),
+      seconds: 5,
       backgroundColor: Colors.deepPurple[50],
       loadingText: Text("Made by Four'o'Four collective"),
       title: Text(
