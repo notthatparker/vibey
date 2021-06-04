@@ -44,10 +44,10 @@ class _HomepageState extends State<Homepage> {
           //returns tab id which is user tapped
 
           if (val == 0) {
-            Get.toNamed('/Home');
+            Get.toNamed('/');
           } else if (val == 1) {
             Get.toNamed('/Patterns');
-          } else if (val == 1) {
+          } else if (val == 2) {
             Get.toNamed('/Settings');
           }
         },

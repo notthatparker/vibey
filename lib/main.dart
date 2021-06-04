@@ -7,7 +7,7 @@ import 'package:vibey/splashvib.dart';
 
 void main() {
   runApp(GetMaterialApp(
-    home: Splashvib(),
+    //  home: Splashvib(),
     debugShowCheckedModeBanner: false,
     title: 'Vibey',
     initialRoute: '/',
