@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:vibey/Settings.dart';
-import 'package:vibey/home.dart';
+import 'package:vibey/Pages/Settings.dart';
+import 'package:vibey/Pages/home.dart';
 import 'package:get/get.dart';
-import 'package:vibey/patterns.dart';
-import 'package:vibey/splashvib.dart';
+import 'package:vibey/Pages/patterns.dart';
+import 'package:vibey/Pages/splashvib.dart';
 
 void main() {
   runApp(GetMaterialApp(

@@ -1,7 +1,6 @@
 import "package:flutter/material.dart";
-import 'package:get/get.dart';
 import 'package:splashscreen/splashscreen.dart';
-import 'package:vibey/home.dart';
+import 'package:vibey/Pages/home.dart';
 
 class Splashvib extends StatefulWidget {
   @override

@@ -18,3 +18,5 @@ The main goal of the app is to create a mvp version of a market ready app .Hence
 - [x]Simple Vibration
 - [ ]create 6 vibration patterns 
 - [ ]Settings page 
+
+
