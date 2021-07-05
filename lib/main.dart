@@ -4,6 +4,7 @@ import 'package:vibey/Pages/home.dart';
 import 'package:get/get.dart';
 import 'package:vibey/Pages/patterns.dart';
 import 'package:vibey/Pages/splashvib.dart';
+import 'package:vibey/Pages/patternvib.dart';
 
 void main() {
   runApp(GetMaterialApp(
@@ -16,6 +17,11 @@ void main() {
       GetPage(name: '/Patterns', page: () => Patternpage()),
       GetPage(name: '/Splashvib', page: () => Splashvib()),
       GetPage(name: '/Settings', page: () => Settpage()),
+      GetPage(
+          name: '/Vibdetil',
+          page: () => PatternVib(
+                cat: null,
+              )),
     ],
   ));
 }
