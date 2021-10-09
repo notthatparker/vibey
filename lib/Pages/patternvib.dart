@@ -2,6 +2,7 @@ import "package:flutter/material.dart";
 import 'package:vibey/models/category.dart';
 import 'package:vibration/vibration.dart';
 
+// Custom Vibration Page
 class PatternVib extends StatelessWidget {
   final Category cat;
 
@@ -9,7 +10,14 @@ class PatternVib extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //bool vibo = false;
+    int con = 0;
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color.fromRGBO(235, 231, 210, 1),
+        elevation: 0,
+      ),
+      backgroundColor: Color.fromRGBO(235, 231, 210, 1),
       body: Container(
         child: SafeArea(
           child: Center(
@@ -19,9 +27,17 @@ class PatternVib extends StatelessWidget {
               children: [
                 RawMaterialButton(
                   onPressed: () async {
+                    con += 1;
                     print('soma');
-                    await Vibration.vibrate(
-                        pattern: this.cat.patterns, intensities: [1, 255]);
+                    while (true) {
+                      await Vibration.vibrate(
+                          pattern: this.cat.patterns, intensities: [1, 255]);
+                      if (con > 4) {
+                        // vibo = false;
+                        con = 0;
+                        Vibration.cancel();
+                      }
+                    }
                   },
                   onLongPress: () {
                     Vibration.cancel();

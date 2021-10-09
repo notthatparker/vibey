@@ -4,7 +4,7 @@ import 'package:vibey/Pages/patternvib.dart';
 import 'package:vibey/models/category.dart';
 
 class PatternList extends StatelessWidget {
-  Category category;
+  final Category category;
   PatternList({this.category});
   @override
   Widget build(BuildContext context) {

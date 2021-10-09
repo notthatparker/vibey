@@ -5,6 +5,7 @@ import 'package:vibey/Widgets/patternList.dart';
 import 'package:vibey/helper/data.dart';
 import 'package:vibey/models/category.dart';
 
+//Category page were the data dart inputs the categories that exist on the app
 class Patternpage extends StatefulWidget {
 //  const Patternpage({ Key? key }) : super(key: key);
 
@@ -19,9 +20,10 @@ class _PatternpageState extends State<Patternpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(235, 231, 210, 1),
       extendBody: true,
       bottomNavigationBar: FloatingNavbar(
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Theme.of(context).accentColor,
         selectedItemColor: Colors.deepPurple,
         borderRadius: 90,
         onTap: (int val) {

@@ -33,6 +33,8 @@ dependencies:
   vibration: ^1.7.3
   get: ^4.1.4
   flutter_svg: ^0.12.1
+  im_animations: ^0.1.1
+  floating_navbar: ^2.0.1
 
 
 

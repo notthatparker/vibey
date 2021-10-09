@@ -2,6 +2,8 @@ import 'package:floating_bottom_navigation_bar/floating_bottom_navigation_bar.da
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+//Settings page to display that its coming soon
+
 class Settpage extends StatefulWidget {
   @override
   _SettpageState createState() => _SettpageState();
@@ -11,9 +13,10 @@ class _SettpageState extends State<Settpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Color.fromRGBO(235, 231, 210, 1),
         extendBody: true,
         bottomNavigationBar: FloatingNavbar(
-          backgroundColor: Colors.deepPurple,
+          backgroundColor: Theme.of(context).primaryColor,
           selectedItemColor: Colors.deepPurple,
           borderRadius: 90,
           onTap: (int val) {
@@ -36,8 +39,13 @@ class _SettpageState extends State<Settpage> {
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset('lib/assets/comingsoon.png'),
+            Image.asset(
+              'lib/assets/comingsoonvibey.png',
+              //alignment: Alignment.center,
+            ),
+            Text("Coming Soon")
           ],
         ));
   }

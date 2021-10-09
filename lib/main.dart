@@ -34,9 +34,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Vibey',
       theme: ThemeData(
-          //    primarySwatch: Colors.purple[900],
-          ),
-      //  home: Splashvib(),
+        //    primarySwatch: Colors.purple[900],
+
+        backgroundColor: Color.fromRGBO(235, 231, 210, 1),
+        accentColor: Color(0x3F73FD),
+      ),
+      home: Splashvib(),
     );
   }
 }

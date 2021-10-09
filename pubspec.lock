@@ -71,6 +71,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.5.1"
+  floating_navbar:
+    dependency: "direct main"
+    description:
+      name: floating_navbar
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.1"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -100,6 +107,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.1.4"
+  im_animations:
+    dependency: "direct main"
+    description:
+      name: im_animations
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.1"
   js:
     dependency: transitive
     description:

@@ -2,12 +2,15 @@ import "package:flutter/material.dart";
 import 'package:floating_bottom_navigation_bar/floating_bottom_navigation_bar.dart';
 import 'package:vibration/vibration.dart';
 import 'package:get/get.dart';
+import 'package:im_animations/im_animations.dart';
+import 'package:floating_navbar/floating_navbar.dart';
 
 class Homepage extends StatefulWidget {
   @override
   _HomepageState createState() => _HomepageState();
 }
 
+//the main page for the app with first vib button and the overall menu
 class _HomepageState extends State<Homepage> {
   bool vibo = false;
   int con = 0;
@@ -44,9 +47,10 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(235, 231, 210, 1),
       extendBody: true,
       bottomNavigationBar: FloatingNavbar(
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Theme.of(context).accentColor,
         selectedItemColor: Colors.deepPurple,
         borderRadius: 90,
         onTap: (int val) {
@@ -85,6 +89,7 @@ class _HomepageState extends State<Homepage> {
                       if (con > 4) {
                         vibo = false;
                         con = 0;
+                        Vibration.cancel();
                       }
                     }
                   },
@@ -96,16 +101,16 @@ class _HomepageState extends State<Homepage> {
                     }
                   },
                   elevation: 6.0,
-                  fillColor: Colors.deepPurple[900],
+                  fillColor: Color.fromRGBO(253, 185, 72, 1),
                   child: Image(
-                    image: AssetImage('lib/assets/vibey.png'),
-                    width: 100,
+                    image: AssetImage('lib/assets/vibeylogo.png'),
+                    width: 230,
                   ),
-                  padding: EdgeInsets.all(70.0),
+                  padding: EdgeInsets.all(30.0),
                   shape: CircleBorder(),
                 ),
                 Padding(padding: EdgeInsets.symmetric(vertical: 9.0)),
-                Text("Press Me Sucker"),
+                Text("Try Me Out"),
               ],
             ),
           ),
