@@ -41,9 +41,11 @@ class _SettpageState extends State<Settpage> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset(
-              'lib/assets/comingsoonvibey.png',
-              //alignment: Alignment.center,
+            Center(
+              child: Image.asset(
+                'lib/assets/comingsoonvibey.png',
+                //alignment: Alignment.center,
+              ),
             ),
             Text("Coming Soon")
           ],
